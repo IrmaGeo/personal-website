@@ -1,4 +1,5 @@
 import React from 'react';
+import ResumeActions from './ResumeActions'; // Import the ResumeActions component
 import './resume.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
@@ -8,11 +9,14 @@ import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 function Resume() {
   return (
     <div className='resume'>
+        <ResumeActions />
+
       <h1>IRMA MODZGVRISHVILI</h1>
       <p>Data Scientist | Machine Learning | NLP | SQL | Tableau | AWS | Python | Data Visualization | Deep Learning</p>
       <p>modzgvrishviliirma@gmail.com ● (347) 641-1970</p>
 
 {/* section for Skills */}
+
 
   
 
@@ -64,6 +68,7 @@ function Resume() {
 
 
 </div>
+
     </div>
   );
 }

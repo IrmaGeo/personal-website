@@ -45,4 +45,30 @@
   }
   
   /* Add more styling for other elements as needed */
+  @media print {
+    .footer {
+      display: none;
+    }
+  }
+  
+  .resume-actions {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 20px; /* Add space between buttons */
+  }
+  
+
+  .resume-actions button {
+    padding: 10px 20px;
+    border: none;
+    color: #141212; /* Set text color to white */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .resume-actions button:hover {
+    background-color: #e7e4e7c5; /* Change background color on hover */
+  }
+  
   
