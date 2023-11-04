@@ -16,7 +16,7 @@
   
   .experience h3 {
     font-size: 24px;
-    color: #black;
+    color: black;
     font-weight: bold; /* Add this line to make "Data Scientist" bold */
     margin-bottom: 10px;
   }
