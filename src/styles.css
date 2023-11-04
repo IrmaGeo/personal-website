@@ -57,7 +57,7 @@ header .nav-link {
 body img {
   height: 250px; /* Change the height as needed */
   border-radius: 20%;
-  margin-top: 5px;
+  margin-top: 20px;
 }
 
 .name {
