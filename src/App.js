@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './header';
 import Footer from './footer';
 import Home from './home';
+import Resume from './resume';
 
 
 
@@ -14,6 +15,7 @@ import Home from './home';
       <Header />
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/resume" element={<Resume/>} />
       
       </Routes>
       <Footer/>
