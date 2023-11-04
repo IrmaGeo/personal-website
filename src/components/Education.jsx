@@ -7,7 +7,7 @@ function Education() {
   const educationData = [
     {
         degree: 'Certified',
-        organization: 'Columbia Engineering Boot Camps',
+        school: 'Columbia Engineering Boot Camps',
         program: 'AI Engineer',
         GPA: 'A+',
         date: 'November 2023 - Current',
@@ -15,7 +15,7 @@ function Education() {
       },
     {
         degree: 'Certified',
-        organization: 'Per Scholas',
+        school: 'Per Scholas',
         program:"AWS practitioner",
         GPA: 'A+',
         date: 'September 2022',

@@ -9,7 +9,6 @@ function ResumeActions() {
   };
 
   const handleDownload = () => {
-    // Replace 'YOUR_RESUME_FILE_URL' with the actual URL of your resume file
     window.open('https://drive.google.com/file/d/1YLUVXGKDHKBveGF3MbXwDxwtoEnz1kya/view?usp=drive_link', '_blanck');
 
   };

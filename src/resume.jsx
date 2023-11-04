@@ -1,25 +1,38 @@
 import React from 'react';
 import ResumeActions from './ResumeActions';
-import Skills from './components/Skills'; // Import the Skills component
+import Skills from './components/Skills';
 import Experience from './components/Experiance';
 import Education from './components/Education';
+import ContactInfo from './components/ContactInfo';
 import './resume.css';
 
 function Resume() {
+  const email = 'modzgvrishviliirma@gmail.com';
+  const phone = '(347) 641-1970';
+  const github = 'https://github.com/IrmaGeo';
+  const linkedin = 'https://www.linkedin.com/in/irmamodzgvrishvili';
+
   return (
     <div className='resume'>
       <ResumeActions />
 
-      <h1>IRMA MODZGVRISHVILI</h1>
-      <p>Data Scientist | Machine Learning | NLP | SQL | Tableau | AWS | Python | Data Visualization | Deep Learning</p>
-      <p>modzgvrishviliirma@gmail.com ● (347) 641-1970</p>
+      <h1>IRMA MODZGVRISHVILI </h1>
+      <h4> Data Scientist | Data Engineer</h4>
+      
+
+      <ContactInfo
+        email={email}
+        phone={phone}
+        github={github}
+        linkedin={linkedin}
+      />
 
       <Skills />
       <Experience />
-      <Education/>
-
+      <Education />
     </div>
   );
 }
+
 
 export default Resume;
