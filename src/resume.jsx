@@ -1,5 +1,5 @@
 import React from 'react';
-import ResumeActions from './ResumeActions';
+import ResumeActions from './components/ResumeActions';
 import Skills from './components/Skills';
 import Experience from './components/Experiance';
 import Education from './components/Education';

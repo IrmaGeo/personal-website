@@ -6,6 +6,7 @@ import Header from './header';
 import Footer from './footer';
 import Home from './home';
 import Resume from './resume';
+import Portfolio from './Portfolio';
 
 
 
@@ -16,6 +17,7 @@ import Resume from './resume';
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/resume" element={<Resume/>} />
+        <Route path="/portfolio" element={<Portfolio/>} />
       
       </Routes>
       <Footer/>
