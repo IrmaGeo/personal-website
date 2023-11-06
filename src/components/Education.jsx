@@ -50,7 +50,7 @@ function Education() {
       {educationData.map((entry, index) => (
        <div key={index}>
        
-       <p>
+       <p className='education-details'>
          <span className='education-degree'>{entry.degree},</span> {entry.program}, GPA: {entry.GPA} | {entry.school}, {entry.location}
          {entry.date && ` | ${entry.date}`}
          {entry.skills && (

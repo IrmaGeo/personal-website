@@ -38,7 +38,6 @@ const Home = () => (
     <FontAwesomeIcon icon={faGithub} />
   </a>
 
-  
 </div>
 
 <div className='data-description'>

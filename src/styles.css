@@ -17,7 +17,7 @@ header {
   align-items: center;
   position: sticky;
   justify-content: space-evenly;
-  height: 60px}
+  height: 70px}
 
 header .nav-link:hover {
   transform: scale(1.05); /* Enlarge the item on hover */

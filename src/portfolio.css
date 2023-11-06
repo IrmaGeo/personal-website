@@ -7,20 +7,30 @@
 
 .category-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between; /* or any other value like 'space-around' */
-
 }
 
-.project-card {
- 
-  margin-right: 10px;
-  height: 200px;
-  width: 200px;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 20px;
 
+.project-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 10px;
+  transition: max-height 0.3s ease, min-height 0.3s ease;
+  max-height: 500px;
+  max-width: 500px; /* Maximum height when expanded */
+  min-height: 200px; /* Minimum height when not expanded */
+}
+
+.project-card h4 {
+  display: inline; /* Display the heading inline with other elements */
+  margin-right: 10px; /* Add some spacing to separate heading and content */
+}
+
+
+.expanded {
+  max-height: none; /* Allow the card to expand to its full content height when expanded */
 }
 
 .project-card:hover {
@@ -37,24 +47,31 @@
 
 }
 
-.project-card h2 {
-  font-size: 1.5rem;
-  margin: 10px 0;
+.category-container h2{
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-style: italic;
+    color: rgb(118, 113, 156);
 }
 
 .project-card h3 {
   font-size: 1.2rem;
   margin: 10px 0;
+  color: gray;
 }
+
 
 .project-card p {
   margin: 5px 0;
+  color: gray;
+}
+.project-card li {
+  color: gray;
 }
 
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 /* Add any additional styling you want here */

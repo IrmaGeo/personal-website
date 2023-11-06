@@ -30,10 +30,12 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    color: gray;
   }
   
   .experience li {
     margin: 5px 0;
+    
     /* Add a margin and padding for better spacing */
   }
   
@@ -44,6 +46,13 @@
     margin-top: 20px;
   }
   
+  .skills-item {
+    color: gray;
+   
+  }
+  .education-details{
+    color: gray;
+  }
   /* Add more styling for other elements as needed */
   @media print {
     .footer {
@@ -79,6 +88,7 @@
 
 .experience {
   margin-top: 20px;
+  
 }
 
 .experience-title {
@@ -103,6 +113,7 @@
   list-style-type: disc; /* Example style for bullet points */
   margin-top: 10px;
   padding-left: 20px;
+  color: gray;
 }
 .education-degree, .skills-group {
   font-weight: bold;

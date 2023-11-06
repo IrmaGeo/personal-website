@@ -61,7 +61,7 @@ function Skills() {
           <li key={groupIndex}>
             <div className='skill-group'>
               <span className='skills-group'>{group.group}:</span>
-              <span>{group.items.join(', ')}</span>
+              <span className='skills-item'>{group.items.join(', ')}</span>
             </div>
           </li>
         ))}
