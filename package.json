@@ -20,14 +20,15 @@
     "mysql2": "^3.6.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.18.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "node server.js", 
-    "client": "react-scripts start" 
+    "server": "node server.js",
+    "client": "react-scripts start"
   },
   "eslintConfig": {
     "extends": [
