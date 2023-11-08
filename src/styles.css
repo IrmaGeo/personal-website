@@ -1,13 +1,14 @@
 @import 'font-awesome/css/font-awesome.min.css';
 
-
-.container{
+.container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   flex-wrap: wrap;
   align-content: stretch;
+  justify-content: space-between;
 }
+
 header {
   background-color: hwb(0 91% 6%);
   color: #080505;
@@ -21,20 +22,18 @@ header {
   z-index: 1;
   justify-content: space-evenly;
   height: 70px;
-  font-family: ;
 }
 
-  footer {
-    background-color: hwb(0 91% 6%);
-    position: sticky;
-    color: #080505;
-    text-align: center;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-  }
+footer {
+  background-color: hwb(0 91% 6%);
+  position: sticky;
+  color: #080505;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
 
 header .nav-link:hover {
   transform: scale(1.05); /* Enlarge the item on hover */
@@ -44,18 +43,9 @@ header .nav-link:hover {
 header .nav-link {
   color: #080505; /* Set the link color to white */
   text-decoration: none; /* Remove underlines from links */
-}
-
-/* Style visited links in the sidebar */
-header .nav-link:visited {
-  color: #080505; /* Set the visited link color to white (also white) */
-}
-
-header .nav-link {
-  display: inline-block; /* Make list items inline */
   font-weight: bold;
   font-size: 16px;
-  text-decoration: none;
+  display: inline-block; /* Make list items inline */
   margin-right: 10px;
 }
 
@@ -71,7 +61,8 @@ header .nav-link {
 }
 
 body img {
-  height: 250px; /* Change the height as needed */
+  max-width: 100%;
+  height: auto; /* Ensure images are responsive */
   border-radius: 20%;
   margin-top: 20px;
 }
@@ -84,7 +75,6 @@ body img {
   margin-left: 100px;
 }
 
-
 .name:hover {
   color: lightgreen; /* Change the color to your desired hover color */
 }
@@ -93,23 +83,26 @@ body img {
   display: flex;
 }
 
-.download-button{
+.download-button {
   margin-bottom: 5px;
 }
 
 .download-button img {
- height: 100px;
- width: 100px;
- overflow: auto;
- margin-top: 0px;
- margin-left: 20px;
+  max-width: 100%;
+  height: auto; /* Ensure images are responsive */
+  width: 100px;
+  margin-top: 0;
+  margin-left: 20px;
 }
 
 .profile-info {
   flex: 0; /* Part 1 takes up all available horizontal space */
-  margin-left: 250px;
+  margin-left: 40px; /* Adjust margin for mobile */
   font-family: fantasy;
+  margin-right: 60px;
+
 }
+
 .profile-info a {
   margin-left: 10px;
   color: black;
@@ -118,26 +111,17 @@ body img {
 
 .data-description {
   flex: 1; /* Part 2 takes up all available horizontal space */
-  margin-right: 100px;
-  margin-left: 30px;
+  margin: 10px; /* Adjust margin for mobile */
   font-family: fantasy;
 }
 
+/* Media Query for Mobile and Web Devices */
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: center; /* Center the navigation links on mobile */
+  }
 
-
-.nav-link {
-  color: #d91e1e; /* Default color for the link */
-  text-decoration: none; /* Remove underline for the link */
+  footer {
+    position: sticky; /* Keep the footer sticky at the bottom for both mobile and web */
+  }
 }
-
-.active {
-  color: #ff0073; /* Change the color for the active link */
-  /* You can add additional styles for the active link */
-}
-
-
-
-
-
-
-

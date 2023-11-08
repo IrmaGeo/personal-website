@@ -4,7 +4,7 @@ import Skills from './components/Skills';
 import Experience from './components/Experiance';
 import Education from './components/Education';
 import ContactInfo from './components/ContactInfo';
-import './resume.css';
+import './Resume.css';
 
 function Resume() {
   const email = 'modzgvrishviliirma@gmail.com';
