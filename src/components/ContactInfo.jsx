@@ -4,7 +4,6 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; // Us
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
-
 function ContactInfo({ email, phone, github, linkedin }) {
 
   return (

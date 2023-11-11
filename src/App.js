@@ -2,11 +2,12 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from "./header";
-import Footer from  "./footer";
-import Resume from "./resume";
-import Portfolio from "./Projects";
-import Home from "./home";
+import Header from "./components/header";
+import Footer from  "./components/footer";
+import Home from "./pages/home";
+import Portfolio from "./pages/Projects";
+import Resume from "./pages/resume";
+
 
   const App = () => (
     <BrowserRouter basename="/personal-website">
@@ -16,7 +17,6 @@ import Home from "./home";
         <Route path="/" element={<Home/>} />
         <Route path="/resume" element={<Resume/>} />
         <Route path="/portfolio" element={<Portfolio/>} />
-      
       </Routes>
       <Footer/>
       </div>
