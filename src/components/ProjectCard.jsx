@@ -8,7 +8,6 @@ const ProjectCard = ({ project }) => {
           <img src={project.ImageLink} alt={project.Name} />
         </a>
       </div>
-
       <div className="content-container">
         <h3>{project.Name}</h3>
         <h4>Problem Statement:</h4>

@@ -5,13 +5,11 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'; // Us
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import "../styles/styles.css";
 
-
-
 const Home = () => (
    <body className='flex-container'>
   <div className='profile-info'>
   {/* Profile Image */}
-  <img src="/personal-website/Images/profile.jpg" alt='Irma Modzgvrishvili'/>
+  <img src="../../images/profile.jpg" alt='Irma Modzgvrishvili'/>
 
   {/* Name */}
   <h1>Irma Modzgvrishvili</h1>

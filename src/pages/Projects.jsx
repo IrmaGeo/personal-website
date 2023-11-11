@@ -20,7 +20,9 @@ const Portfolio = () => {
         'Decreased delay periods from 1 hour to 10 minutes',
         "Automated various manual processes",
         "Increased the capacity and efficiency of employees"
-      ]
+      ],
+      ImageLink: '../../images/Qmatic.jpeg', // Add the path to your image
+
     },
     {
         Id: 2,
