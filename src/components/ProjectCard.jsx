@@ -1,3 +1,4 @@
+// ProjectCard.js
 import React from 'react';
 
 const ProjectCard = ({ project }) => {
@@ -12,6 +13,7 @@ const ProjectCard = ({ project }) => {
         <h3>{project.Name}</h3>
         <h4>Problem Statement:</h4>
         <p>{project.Description}</p>
+        {/* Add an image element here */}
         <h4>Tools/Libraries:</h4>
         <p>{project.Technics}</p>
         <h4>Skills:</h4>

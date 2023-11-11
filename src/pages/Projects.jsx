@@ -21,8 +21,7 @@ const Portfolio = () => {
         "Automated various manual processes",
         "Increased the capacity and efficiency of employees"
       ],
-      ImageLink: '../../images/Qmatic.jpeg', // Add the path to your image
-
+      ImageLink: '../../images/Qmatic.jpeg', 
     },
     {
         Id: 2,
