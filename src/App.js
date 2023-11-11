@@ -2,13 +2,11 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './Header';
-import Footer from './Footer';
-import Home from './Home';
-import Resume from './Resume';
-import Portfolio from './Portfolio';
-
-
+import Header from "./header";
+import Footer from  "./footer";
+import Resume from "./resume";
+import Portfolio from "./Projects";
+import Home from "./home";
 
   const App = () => (
     <BrowserRouter basename="/personal-website">

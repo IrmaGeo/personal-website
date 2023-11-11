@@ -1,27 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import CategoryName from './CategoryName';
-import axios from 'axios';
+import React from 'react';
 
-const apiUrl = process.env.REACT_APP_API_URL;
-
-const ProjectCard = ({ project, onNavigateNext, onNavigatePrevious }) => {
-  const [achievements, setAchievements] = useState([]);
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    setLoading(true);
-    axios
-      .get(`${apiUrl}/api/achievements/${project.Id}`)
-      .then((response) => {
-        setAchievements(response.data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error('Error fetching achievements:', error);
-        setLoading(false);
-      });
-  }, []); // Run this effect when the component mounts
-
+const ProjectCard = ({ project }) => {
   return (
     <div className='project-card'>
       <div className="image-container">
@@ -40,8 +19,8 @@ const ProjectCard = ({ project, onNavigateNext, onNavigatePrevious }) => {
         <p>{project.Skills}</p>
         <h4>Achievements:</h4>
         <ul>
-          {achievements.map((achievement, index) => (
-            <li key={index}>{achievement.Name}</li>
+          {project.Achievements.map((achievement, index) => (
+            <li key={index}>{achievement}</li>
           ))}
         </ul>
       </div>

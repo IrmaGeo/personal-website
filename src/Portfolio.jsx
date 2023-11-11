@@ -4,7 +4,7 @@ import ProjectCard from './components/ProjectCard';
 import CategoryName from './components/CategoryName';
 import { Carousel } from 'react-responsive-carousel'; // Import the Carousel component
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import Carousel styles
-import './Portfolio.css';
+import './portfolio.css';
 
 function Portfolio() {
   const [projects, setProjects] = useState([]);
