@@ -6,7 +6,7 @@ const ProjectCard = ({ project }) => {
     <div className='project-card'>
       <div className="image-container">
         <a href={project.Links} target="_blank" rel="noopener noreferrer">
-          <img src="../../resources/images/Qmatic.jpeg" alt={project.Name} />
+          <img src={project.ImageLink} alt={project.Name} />
         </a>
       </div>
       <div className="content-container">
