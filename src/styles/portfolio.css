@@ -1,0 +1,183 @@
+/* Original styles (for all devices) */
+.portfolio {
+  width: 80%;
+  margin-left: 100px;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+  margin: 10px;
+}
+
+.category-container h2 {
+  color: rgb(118, 113, 156);
+}
+
+.category-container p,
+.category-container h3,
+.category-container li {
+  color: gray;
+}
+
+.project-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.image-container {
+  flex: 0 0 30%;
+  margin-left: 10px;
+}
+
+.content-container {
+  flex: 1;
+}
+
+.category-container {
+  overflow-x: auto;
+}
+
+.project-card h4 {
+  display: inline;
+}
+
+.carousel .slide img {
+  width: 250px;
+  height: 200px;
+  margin-left: 50px;
+}
+
+.carousel .slide {
+  text-align: left;
+  background-color: #faf9f8;
+}
+
+.carousel .control-dots .dot {
+  box-shadow: 1px -1px 2px 1px rgba(0, 0, 0, 0.9);
+  background: #8e85a2;
+  border-radius: 50%;
+  width: 12px;
+  height: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  margin: 0 8px;
+  flex-wrap: nowrap;
+  flex-direction: column-reverse;
+  transition: opacity 0.25s ease-in;
+  opacity: 0.3;
+}
+
+.carousel.carousel-slider .control-arrow {
+  top: 0;
+  color: #fff;
+  font-size: 26px;
+  bottom: 0;
+  margin-top: 0;
+  padding: 5px;
+}
+
+/* Original styles (for all devices) */
+/* ... (Your existing styles) ... */
+
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 768px) {
+  .portfolio {
+    width: 90%;
+    margin-left: 10px;
+  }
+
+  .category-container {
+    width: 100%;
+    margin: 5px;
+  }
+
+  .category-container h2 {
+    font-size: 20px;
+  }
+
+  .category-container p,
+  .category-container h3,
+  .category-container li {
+    font-size: 16px;
+  }
+
+  .image-container {
+    flex: 0 0 50%;
+    margin-left: 30;
+  }
+
+  .content-container {
+    flex: 1;
+    padding: 10px;
+    
+  }
+
+  /* Adjust the project card layout for mobile */
+  .project-card {
+    flex-direction: column; /* Stack content vertically on mobile */
+  }
+
+  .image-container {
+    flex: 0 0 100%; /* Full width for the image container */
+    margin: 0; /* Remove margin for the image container */
+  }
+
+  .content-container {
+    flex: 1;
+    padding: 10px;
+    margin-top: 10px; /* Add margin between image and content */
+  }
+}
+/* Media Query for iPod Air (adjust dimensions as needed) */
+@media screen and (max-width: 834px) and (max-height: 1194px) {
+  .image-container {
+    flex: 1; /* Allow image to take the full width available */
+    margin: 0; /* Remove margin for the image container */
+  }
+
+  .content-container {
+    flex: 1;
+    padding: 10px;
+    margin-top: 10px; /* Add margin between image and content */
+  }
+}
+
+@media screen and (max-width: 912px) and (max-height: 1368px) {
+  .image-container {
+    flex: 1; /* Allow image to take the full width available */
+    margin: 0; /* Remove margin for the image container */
+  }
+
+  .content-container {
+    flex: 1;
+    padding: 10px;
+    margin-top: 10px; /* Add margin between image and content */
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+  .image-container {
+    flex: 1; /* Allow image to take the full width available */
+    margin: 0; /* Remove margin for the image container */
+  }
+
+  .content-container {
+    flex: 1;
+    padding: 10px;
+    margin-top: 10px; /* Add margin between image and content */
+  }
+}
+@media screen and (max-width: 1280px) and (max-height: 800px) {
+  .image-container {
+    flex: 1; /* Allow image to take the full width available */
+    margin: 0; /* Remove margin for the image container */
+  }
+
+  .content-container {
+    flex: 1;
+    padding: 10px;
+    margin-top: 10px; /* Add margin between image and content */
+  }
+}

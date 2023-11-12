@@ -1,0 +1,127 @@
+@import 'font-awesome/css/font-awesome.min.css';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-between;
+}
+
+header {
+  background-color: hwb(0 91% 6%);
+  color: #080505;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  justify-content: space-evenly;
+  height: 70px;
+}
+
+footer {
+  background-color: hwb(0 91% 6%);
+  position: sticky;
+  color: #080505;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+header .nav-link:hover {
+  transform: scale(1.05); /* Enlarge the item on hover */
+}
+
+/* Style links in the sidebar */
+header .nav-link {
+  color: #080505; /* Set the link color to white */
+  text-decoration: none; /* Remove underlines from links */
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block; /* Make list items inline */
+  margin-right: 10px;
+}
+
+.description {
+  font-family: 'Font Name', smileyOblique; /* Use the chosen font-family name */
+  text-align: right;
+  font-style: italic;
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.description:hover {
+  color: lightgreen; /* Change the color to your desired hover color */
+}
+
+body img {
+  max-width: 100%;
+  height: auto; /* Ensure images are responsive */
+  border-radius: 20%;
+  margin-top: 20px;
+}
+
+.name {
+  font-size: 30px; /* Adjust the font size as needed */
+  font-family: 'Font Name', smileyOblique; /* Use the chosen font-family name */
+  font-style: italic bold;
+  transition: color 0.3s; /* Smooth color transition on hover */
+  margin-left: 100px;
+}
+
+.name:hover {
+  color: lightgreen; /* Change the color to your desired hover color */
+}
+
+.flex-container {
+  display: flex;
+}
+
+.download-button {
+  margin-bottom: 5px;
+}
+
+.download-button img {
+  max-width: 100%;
+  height: auto; /* Ensure images are responsive */
+  width: 100px;
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+.profile-info {
+  flex: 0; /* Part 1 takes up all available horizontal space */
+  margin-left: 40px; /* Adjust margin for mobile */
+  font-family: fantasy;
+  margin-right: 60px;
+
+}
+
+.profile-info a {
+  margin-left: 10px;
+  color: black;
+  font-size: 24px;
+}
+
+.data-description {
+  flex: 1; /* Part 2 takes up all available horizontal space */
+  margin: 10px; /* Adjust margin for mobile */
+  font-family: fantasy;
+}
+
+/* Media Query for Mobile and Web Devices */
+@media screen and (max-width: 768px) {
+  header {
+    justify-content: center; /* Center the navigation links on mobile */
+  }
+
+  footer {
+    position: sticky; /* Keep the footer sticky at the bottom for both mobile and web */
+  }
+}

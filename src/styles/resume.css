@@ -1,0 +1,127 @@
+/* resume.css */
+@import '~font-awesome/css/font-awesome.css';
+
+.resume {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  .experience {
+    margin-top: 20px;
+  }
+  
+  .experience h3 {
+    font-size: 24px;
+    color: black;
+    font-weight: bold; /* Add this line to make "Data Scientist" bold */
+    margin-bottom: 10px;
+  }
+  
+  .experience p {
+    margin: 5px 0;
+  }
+  
+  /* Remove list-style for the unordered list */
+  .experience ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: gray;
+  }
+  
+  .experience li {
+    margin: 5px 0;
+    
+    /* Add a margin and padding for better spacing */
+  }
+  
+  /* Add more styling for other elements as needed */
+  
+  
+  .education {
+    margin-top: 20px;
+  }
+  
+  .skills-item {
+    color: gray;
+   
+  }
+  .education-details{
+    color: gray;
+  }
+  /* Add more styling for other elements as needed */
+  @media print {
+    .footer {
+      display: none;
+    }
+    .header {
+      display: none;
+    }
+
+  }
+  
+  .resume-actions {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 20px; /* Add space between buttons */
+  }
+  
+
+  .resume-actions button {
+    padding: 10px 20px;
+    border: none;
+    color: #141212; /* Set text color to white */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .resume-actions button:hover {
+    background-color: #e7e4e7c5; /* Change background color on hover */
+  }
+  
+  /* Styles for the Experience component */
+
+.experience {
+  margin-top: 20px;
+  
+}
+
+.experience-title {
+  font-weight: bold;
+  font-size: 18px; /* Example title style */
+}
+
+.experience-company {
+  color: #666; /* Example company name style */
+}
+
+.experience-date {
+  font-style: italic; /* Example date style */
+  color: #999;
+}
+
+.experience-location {
+  color: #777; /* Example location style */
+}
+
+.experience ul {
+  list-style-type: disc; /* Example style for bullet points */
+  margin-top: 10px;
+  padding-left: 20px;
+  color: gray;
+}
+.education-degree, .skills-group {
+  font-weight: bold;
+
+}
+.contact-icon {
+  margin-right: 5px;
+}
+.contact-value{
+  margin-right: 10px;
+}
