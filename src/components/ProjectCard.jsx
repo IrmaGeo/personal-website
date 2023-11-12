@@ -10,7 +10,6 @@ const ProjectCard = ({ project }) => {
         </a>
       </div>
       <div className="content-container">
-        console.log("ddd", {project.ImageLink})
         <h3>{project.Name}</h3>
         <h4>Problem Statement:</h4>
         <p>{project.Description}</p>

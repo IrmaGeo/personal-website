@@ -9,7 +9,7 @@ const Home = () => (
    <body className='flex-container'>
   <div className='profile-info'>
   {/* Profile Image */}
-  <img src="../../resources/images/profile.jpg" alt='Irma Modzgvrishvili'/>
+  <img src="/personal-website/resources/images/profile.jpg" alt='Irma Modzgvrishvili'/>
 
   {/* Name */}
   <h1>Irma Modzgvrishvili</h1>
