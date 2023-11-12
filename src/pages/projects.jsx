@@ -21,7 +21,7 @@ const Projects = () => {
         "Automated various manual processes",
         "Increased the capacity and efficiency of employees"
       ],
-      ImageLink: `${process.env.PUBLIC_URL}/resources/images/Qmatic.jpeg`
+      ImageLink: `${process.env.REACT_APP_PUBLIC_URL}/resources/images/Qmatic.jpeg`
 
     },
     {
