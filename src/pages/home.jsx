@@ -6,10 +6,13 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import "../styles/styles.css";
 
 const Home = () => (
+  console.log("REACT_APP_PUBLIC_URL:", process.env.REACT_APP_PUBLIC_URL);
+
    <body className='flex-container'>
   <div className='profile-info'>
   {/* Profile Image */}
   <img src="https://irmageo.github.io/personal-website/resources/images/profile.jpg" alt='Irma Modzgvrishvili'/>
+  
 
   {/* Name */}
   <h1>Irma Modzgvrishvili</h1>
@@ -37,6 +40,7 @@ const Home = () => (
   </a>
 
 </div>
+
 
 <div className='data-description'>
   <h1>About Me</h1>
@@ -70,17 +74,8 @@ const Home = () => (
  
 </div>
 
- 
-   
-    
- 
-
-
-
-
-      
-  
 </body>
+
 );
 
 export default Home;
