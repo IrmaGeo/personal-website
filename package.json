@@ -1,7 +1,7 @@
 {
   "name": "personal-website",
   "version": "0.1.0",
-  "homepage": "https://irmageo.github.io/personal-website/",
+  "homepage": "https://irmageo.github.io/personal-website",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.4.2",
