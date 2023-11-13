@@ -12,15 +12,15 @@ const Projects = () => {
     const fetchData = async () => {
       try {
         // Fetch projects
-        const projectsResponse = await fetch('/personal-website/data/projects.json');
+        const projectsResponse = await fetch('../../data/projects.json');
         const projectsData = await projectsResponse.json();
         setProjects(projectsData);
-
+  
         // Fetch categories
-        const categoriesResponse = await fetch('/personal-website/data/categories.json');
+        const categoriesResponse = await fetch('../../data/categories.json');
         const categoriesData = await categoriesResponse.json();
         setCategories(categoriesData);
-
+  
         // Data fetched, set loading to false
         setLoading(false);
       } catch (error) {
@@ -29,9 +29,10 @@ const Projects = () => {
         setLoading(false);
       }
     };
-
+  
     fetchData();
-  }, );
+  }, []); // Empty dependency array means this effect will run once when the component mounts
+  
 
   const groupProjectsByCategory = () => {
     const groupedProjects = {};
