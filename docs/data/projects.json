@@ -1,0 +1,32 @@
+[
+    {
+      "id": 1,
+      "name": "QMATIC System",
+      "description":"Implemented the QMATIC system with the goal to enhance customer service efficiency. The primary objectives of the project were to reduce customer service time, minimize delays, automate processes, and enhance employee capacity",
+      "tools": "Tableau,SQL, Qudini",
+      "skills": "PM (Project Management), Data Analytics, Staff Training, Process Automation",
+      "categoryId": 2,
+      "image": "/resources/images/Qmatic.jpeg",
+      "githubLink": "https://github.com/project1",
+      "achievements": ["Reduced customer service time from 40 minutes to 20 minutes",
+      "Decreased delay periods from 1 hour to 10 minutes",
+      "Automated various manual processes",
+      "Increased the capacity and efficiency of employees"]
+    },
+    {
+      "id": 2,
+      "name": "Agile transformation",
+      "description": "A Company with 7,000 employees (TBC BANK) needed to change its corporate culture and management methodology",
+      "tools": "Jira",
+      "skills": "SAFe 5.1, Change management, Collaborative teamwork",
+      "categoryId": 3,
+      "image": "path/to/image2.jpg",
+      "githubLink": "https://github.com/project2",
+      "achievements": [
+        "Increased project delivery rate by 30%",
+        "Enhanced team efficiency by 10%",
+        "Implemented agile methodologies with McKinsey for substantial organizational improvements"
+    ]
+    }
+  ]
+  
