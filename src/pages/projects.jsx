@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ProjectDetails from '../components/ProjectDetails';
 import '../styles/portfolio.css';
 
-const Portfolio = () => {
+const Projects = () => {
   const [projects, setProjects] = useState([]);
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -75,4 +75,4 @@ const Portfolio = () => {
   return <div className="portfolio">{renderProjects()}</div>;
 };
 
-export default Portfolio;
+export default Projects;
