@@ -2,13 +2,13 @@
 import React from 'react';
 
 const ProjectCard = ({ project }) => {
-  const fullImageUrl = `${process.env.REACT_APP_PUBLIC_URL}${project.image}`;
+  console.log(project.image)
 
   return (
     <div className='project-card'>
       <div className="image-container">
         <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-          <img src={fullImageUrl} alt={project.name} />
+          <img src={project.image} alt={project.name} />
         </a>
       </div>
       <div className="content-container">

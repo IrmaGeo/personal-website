@@ -6,7 +6,7 @@
       "tools": "Tableau,SQL, Qudini",
       "skills": "PM (Project Management), Data Analytics, Staff Training, Process Automation",
       "categoryId": 2,
-      "image": "/resources/images/Qmatic.jpeg",
+      "image": "/Qmatic.jpeg",
       "githubLink": "https://github.com/project1",
       "achievements": ["Reduced customer service time from 40 minutes to 20 minutes",
       "Decreased delay periods from 1 hour to 10 minutes",
@@ -20,7 +20,7 @@
       "tools": "Jira",
       "skills": "SAFe 5.1, Change management, Collaborative teamwork",
       "categoryId": 3,
-      "image": "path/to/image2.jpg",
+      "image": "/Qmatic.jpeg",
       "githubLink": "https://github.com/project2",
       "achievements": [
         "Increased project delivery rate by 30%",

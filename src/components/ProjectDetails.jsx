@@ -12,7 +12,6 @@ const ProjectDetails = ({ category, projects }) => {
         showArrows
         infiniteLoop
         showThumbs={false}
-        autoPlay
         interval={5000}
         stopOnHover={false}
         className="custom-carousel"

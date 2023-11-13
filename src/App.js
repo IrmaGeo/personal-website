@@ -5,7 +5,6 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import Home from "./pages/home";
 import Resume from "./pages/resume";
-import Test from './pages/test';
 import Projects from "./pages/projects";
 
 
@@ -14,10 +13,9 @@ const App = () => (
     <div className="container">
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/test" element={<Test />} />
+        <Route path="" element={<Home />} />
+        <Route path="resume" element={<Resume />} />
+        <Route path="projects" element={<Projects />} />
       </Routes>
       <Footer />
     </div>
