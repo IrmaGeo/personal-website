@@ -15,9 +15,9 @@ import Resume from "./pages/resume";
     <div className="container">
       <Header />
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/resume" element={<Resume/>} />
-        <Route path="/projects" element={<Projects/>} />
+        <Route path="" element={<Home />} />
+        <Route path="resume" element={<Resume />} />
+        <Route path="projects" element={<Projects />} />
       </Routes>
       <Footer/>
       </div>
