@@ -1,33 +1,27 @@
-// App.js
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./components/header";
-import Footer from  "./components/footer";
+import Footer from "./components/footer";
 import Home from "./pages/home";
 import Projects from "./pages/projects";
+import Resume from "./pages/resume";
 import Test from './pages/test';
 
-import Resume from "./pages/resume";
 
-
-  const App = () => (
-    <BrowserRouter basename="/personal-website">
+const App = () => (
+  <Router>
     <div className="container">
       <Header />
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/resume" element={<Resume/>} />
-        <Route path="/projects" element={<Projects/>} />
-        <Route path="/test" element={<Test/>} />
-
-
-        
+        <Route path="/" element={<Home />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
-      <Footer/>
-      </div>
-     
-    </BrowserRouter>
-  );
+      <Footer />
+    </div>
+  </Router>
+);
 
 export default App;

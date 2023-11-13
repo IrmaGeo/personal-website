@@ -31,7 +31,7 @@ const Projects = () => {
     };
 
     fetchData();
-  }, []);
+  }, );
 
   const groupProjectsByCategory = () => {
     const groupedProjects = {};
