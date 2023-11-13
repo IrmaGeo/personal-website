@@ -2,25 +2,27 @@
 import React from 'react';
 
 const ProjectCard = ({ project }) => {
+  const fullImageUrl = `${process.env.REACT_APP_PUBLIC_URL}${project.image}`;
+
   return (
     <div className='project-card'>
       <div className="image-container">
-        <a href={project.Links} target="_blank" rel="noopener noreferrer">
-          <img src={project.ImageLink} alt={project.Name} />
+        <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+          <img src={fullImageUrl} alt={project.name} />
         </a>
       </div>
       <div className="content-container">
-        <h3>{project.Name}</h3>
+        <h3>{project.name}</h3>
         <h4>Problem Statement:</h4>
-        <p>{project.Description}</p>
+        <p>{project.description}</p>
         {/* Add an image element here */}
         <h4>Tools/Libraries:</h4>
-        <p>{project.Technics}</p>
+        <p>{project.tools}</p>
         <h4>Skills:</h4>
-        <p>{project.Skills}</p>
+        <p>{project.skills}</p>
         <h4>Achievements:</h4>
         <ul>
-          {project.Achievements.map((achievement, index) => (
+          {project.achievements.map((achievement, index) => (
             <li key={index}>{achievement}</li>
           ))}
         </ul>
