@@ -1,118 +1,47 @@
-// Portfolio.js
-
-import React from 'react';
-import ProjectDetails from "../components/ProjectDetails"
-import "../styles/portfolio.css"
+import React, { useState, useEffect } from 'react';
+import ProjectDetails from '../components/ProjectDetails';
+import '../styles/portfolio.css';
 
 const Projects = () => {
-  // Hardcoded projects and categories
-  const projects = [
-    {
-      Id: 1,
-      CategoryId: 3,
-      Name: 'QMATIC System',
-      Description:
-        'Implemented the QMATIC system with the goal to enhance customer service efficiency. The primary objectives of the project were to reduce customer service time, minimize delays, automate processes, and enhance employee capacity',
-      Technics: 'Tableau,SQL, Qudini',
-      Skills: 'PM (Project Management), Data Analytics, Staff Training, Process Automation',
-      Achievements: [
-        'Reduced customer service time from 40 minutes to 20 minutes',
-        'Decreased delay periods from 1 hour to 10 minutes',
-        "Automated various manual processes",
-        "Increased the capacity and efficiency of employees"
-      ],
-      ImageLink: `${process.env.REACT_APP_PUBLIC_URL}/resources/images/Qmatic.jpeg`
+  const [projects, setProjects] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-    },
-    {
-        Id: 2,
-        CategoryId: 3,
-        Name: 'Agile transformation',
-        Description:"A Company with 7,000 employees (TBC BANK) needed to change its corporate culture and management methodology",
-        Technics: 'Jira',
-        Skills: "SAFe 5.1, Change management, Collaborative teamwork",
-        Achievements: [
-            "Increased project delivery rate by 30%",
-            "Enhanced team efficiency by 10%",
-            "Implemented agile methodologies with McKinsey for substantial organizational improvements",
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        // Fetch projects
+        const projectsResponse = await fetch('/personal-website/data/projects.json');
+        const projectsData = await projectsResponse.json();
+        setProjects(projectsData);
 
-        ],
-      },
-      {
-        Id: 3,
-        CategoryId: 3,
-        Name: 'Multi-Currency Loan',
-        Description:"Mitigated currency risk and customer dissatisfaction by introducing a multi-currency loan product with fixed monthly payments",
-        Technics: '',
-        Skills: "Financial Analysis, Product Development, Risk Management, Customer Satisfaction",
-        Achievements: [
-            "Reduced portfolio risk with fixed payments",
-            "Increased sales by 3%",
-            "Implemented agile methodologies with McKinsey for substantial organizational improvements",
+        // Fetch categories
+        const categoriesResponse = await fetch('/personal-website/data/categories.json');
+        const categoriesData = await categoriesResponse.json();
+        setCategories(categoriesData);
 
-        ],
-      },
-      {
-        Id: 4,
-        CategoryId: 2,
-        Name: 'Loan Management System(LMS)',
-        Description:"",
-        Technics: '',
-        Skills: "",
-        Achievements: [
+        // Data fetched, set loading to false
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        setError('Error fetching data. Please try again later.');
+        setLoading(false);
+      }
+    };
 
-        ],
-      },
-      {
-        Id: 5,
-        CategoryId: 2,
-        Name: 'Personal Website',
-        Description:"",
-        Technics: '',
-        Skills: "",
-        Achievements: [
-
-        ],
-      },
-      {
-        Id: 6,
-        CategoryId: 2,
-        Name: 'Data Migration',
-        Description:"",
-        Technics: '',
-        Skills: "",
-        Achievements: [
-
-        ],
-      },
-      {
-        Id: 7,
-        CategoryId: 2,
-        Name: 'Emoployee Tracker',
-        Description:"",
-        Technics: '',
-        Skills: "",
-        Achievements: [
-
-        ],
-      },
-  ];
-
-  const categoryNames = {
-    1: 'Data',
-    2: 'Technical',
-    3: 'Business',
-    // Add more categories as needed
-  };
+    fetchData();
+  }, []);
 
   const groupProjectsByCategory = () => {
     const groupedProjects = {};
 
     projects.forEach((project) => {
-      if (!groupedProjects[project.CategoryId]) {
-        groupedProjects[project.CategoryId] = [];
+      const category = project.categoryId;
+      if (!groupedProjects[category]) {
+        groupedProjects[category] = [];
       }
-      groupedProjects[project.CategoryId].push(project);
+      groupedProjects[category].push(project);
     });
 
     return groupedProjects;
@@ -120,15 +49,28 @@ const Projects = () => {
 
   const renderProjects = () => {
     const groupedProjects = groupProjectsByCategory();
-
-    return Object.keys(groupedProjects).map((categoryId) => (
-      <ProjectDetails
-        key={categoryId}
-        category={categoryNames[categoryId]}
-        projects={groupedProjects[categoryId]}
-      />
-    ));
+  
+    return Object.keys(groupedProjects).map((categoryId) => {
+      const foundCategory = categories.find((category) => category.id === Number(categoryId));
+      const categoryName = foundCategory?.name || '';
+      return (
+        <ProjectDetails
+          key={categoryId} // Use categoryId directly as the key
+          category={categoryName}
+          projects={groupedProjects[categoryId]}
+        />
+      );
+    });
   };
+  
+
+  if (loading) {
+    return <div>Loading...</div>;
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>;
+  }
 
   return <div className="portfolio">{renderProjects()}</div>;
 };
