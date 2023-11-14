@@ -3,10 +3,9 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
 ![HTML](https://img.shields.io/badge/HTML-5-blue)
 ![CSS](https://img.shields.io/badge/CSS-3-orange)
-
-
-
-
+[![Heroku](https://img.shields.io/badge/Heroku-Deployment-brightgreen)](https://datavoyager.tech/#/)
+[![SSL](https://img.shields.io/badge/SSL-Enabled-brightgreen)](https://datavoyager.tech/#/)
+[![DNS](https://img.shields.io/badge/DNS-Configured-brightgreen)](https://datavoyager.tech/#/)
 
 ## Overview
 Welcome to my personal website! This project serves as my online portfolio to showcase my work, skills, and interests. Feel free to explore and get to know more about me.
@@ -37,4 +36,3 @@ Feel free to connect with me:
 - GitHub: [IrmaGeo](https://github.com/IrmaGeo)
 
 Thank you for visiting my portfolio!
-
