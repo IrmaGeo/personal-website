@@ -29,8 +29,8 @@
     "start": "react-scripts start",
     "server": "node server.js",
     "client": "react-scripts start",
-    "build": "react-scripts build && mv build docs"
-  },
+    "build": "react-scripts build"
+    },
   "eslintConfig": {
     "extends": [
       "react-app",
