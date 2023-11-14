@@ -24,5 +24,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+/lib
+
 node_modules/.cache/default-development/10.pack
+
 
