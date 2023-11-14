@@ -7,9 +7,10 @@ import "../styles/styles.css";
 
 const Home = () => {
   return (
-    <body className='flex-container'>
+    <div className='flex-container'>
       <div className='profile-info'>
-      <img src={myImage} alt="profile" />
+        <img src={myImage} alt="profile" />
+
         {/* Name */}
         <h1>Irma Modzgvrishvili</h1>
 
@@ -65,7 +66,7 @@ const Home = () => {
           <li>Artificial Intelligence</li>
         </ul>
       </div>
-    </body>
+    </div>
   );
 };
 

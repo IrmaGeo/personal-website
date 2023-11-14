@@ -54,7 +54,7 @@ body img {
   max-width: 100%;
   height: auto; /* Ensure images are responsive */
   border-radius: 20%;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 .name {
@@ -65,14 +65,14 @@ body img {
   margin-left: 100px;
 }
 
-
-
 .name:hover {
   color: lightgreen; /* Change the color to your desired hover color */
 }
 
 .flex-container {
   display: flex;
+  margin-right: 90px;
+  margin-left: 200px;
 }
 
 .download-button {
@@ -118,14 +118,71 @@ footer {
 }
 
 
-
 /* Media Query for Mobile and Web Devices */
 @media screen and (min-width: 375px) and (max-width: 667px) {
   header {
-    justify-content: center; /* Center the navigation links on mobile */
+    justify-content: center; 
+    position: sticky;
+    top:0;
   }
 
   footer {
-    position: sticky; /* Keep the footer sticky at the bottom for both mobile and web */
+    position: sticky;
+    bottom: 0; 
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 912px) and (max-height: 1368px) {
+  header {
+    justify-content: center;
+    position: sticky;
+    top:0;
+  }
+
+  footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%; 
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+  header {
+    justify-content: center; 
+    position: sticky;
+    top:0;
+  }
+
+  footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%; 
+}
+}
+@media screen and (max-width: 1280px) and (max-height: 800px) {
+  header {
+    justify-content: center; 
+    position: sticky;
+    top:0;
+  }
+
+  footer {
+    position: sticky;
+    bottom: 0; 
+    width: 100%;
+  }
+}
+@media screen and (max-width: 834px) and (max-height: 1194px) {
+  header {
+    justify-content: center;
+    position: sticky;
+    top: 0;
+  }
+
+  footer {
+    position: sticky;
+    bottom: 0; 
+    width: 100%;
   }
 }
