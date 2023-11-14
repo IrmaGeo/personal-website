@@ -1,0 +1,37 @@
+[
+    {
+      "title": "Data Scientist",
+      "company": "TBC BANK",
+      "location": "Tbilisi, Georgia",
+      "date": "February 2022 - Current",
+      "description": [
+        "Created a customer propensity scoring model utilizing ML gradient boosting (xgboost) to identify critical site features...",
+        "Combined SQL and Tableau for ad hoc data analysis of payment methods visualized in a dashboard...",
+        "Utilized Pytorch and product data to train a neural network to produce product embeddings...",
+        "Leveraged an artificial neural network in statistical modeling of repeat purchase behavior..."
+      ]
+    },
+    {
+      "title": "System Analyst",
+      "company": "TBC BANK",
+      "location": "Tbilisi, Georgia",
+      "date": "May 2018 - February 2022",
+      "description": [
+        "Upgraded SDLC by implementing Agile methodology, reducing software development time by 30%...",
+        "Orchestrated successful data migrations and optimized processes, securing $1 million in vendor discounts within 4 months...",
+        "Created and developed predictive models using statistical analysis and SQL to forecast sales..."
+      ]
+    },
+    {
+      "title": "Data Analyst",
+      "company": "TBC BANK",
+      "location": "Tbilisi, Georgia",
+      "date": "December 2014 - May 2018",
+      "description": [
+        "Built a real-time data and reporting system using SQL, Tableau, Access, and Excel, reducing report time by 25%...",
+        "Formulated machine learning models to forecast customer demand and optimized inventory management...",
+        "Deployed new tools, ETL, and middleware, while improving customer value-based pricing..."
+      ]
+    }
+  ]
+  

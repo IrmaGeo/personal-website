@@ -1,18 +1,19 @@
+// src/pages/Resume.js
 import React from 'react';
-import ResumeActions from "../components/ResumeActions";
+import ResumeActions from '../components/ResumeActions';
 import Skills from '../components/Skills';
-import Experience from '../components/Experiance';
 import Education from '../components/Education';
 import ContactInfo from '../components/ContactInfo';
-import "../styles/resume.css";
-
-
+import Experience from '../components/Experiance';
+import '../styles/resume.css';
 
 function Resume() {
-  const email = 'modzgvrishviliirma@gmail.com';
-  const phone = '(347) 641-1970';
-  const github = 'https://github.com/IrmaGeo';
-  const linkedin = 'https://www.linkedin.com/in/irmamodzgvrishvili';
+  const dataPaths = {
+    contactInfo: '/data/contactInfo.json',
+    experiences: '/data/experiences.json',
+    education: '/data/education.json',
+    skills: '/data/skills.json' // Add the path to skills data
+  };
 
   return (
     <div className='resume'>
@@ -20,21 +21,14 @@ function Resume() {
 
       <h1>IRMA MODZGVRISHVILI </h1>
       <h4> Data Scientist | Data Engineer</h4>
-      
 
-      <ContactInfo
-        email={email}
-        phone={phone}
-        github={github}
-        linkedin={linkedin}
-      />
+      <ContactInfo dataPath={dataPaths.contactInfo} />
 
-      <Skills />
-      <Experience />
-      <Education />
+      <Skills dataPath={dataPaths.skills} />
+      <Experience dataPath={dataPaths.experiences} />
+      <Education dataPath={dataPaths.education} />
     </div>
   );
 }
-
 
 export default Resume;

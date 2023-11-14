@@ -1,0 +1,55 @@
+// public/data/skills.json
+{
+    "skillGroups": [
+      {
+        "group": "Programming Languages",
+        "items": [
+          "Python",
+          "SQL (PostgreSQL, MySQL)",
+          "Python Libraries (numpy, pandas, scikit-learn, streamlit, matplotlib, Pytorch, Seaborn, ONNX, Sqlalchemy)",
+          "Javascript",
+          "HTML",
+          "CSS"
+        ]
+      },
+      {
+        "group": "Machine Learning (ML)",
+        "items": [
+          "Linear and Logistic Regression",
+          "Random Forests",
+          "PCA",
+          "Gradient Boosting",
+          "K-means",
+          "Deep Learning",
+          "NLP (nltk, SpaCy, Word2Vec, GloVe, TF-IDF)",
+          "Time Series Forecasting (Facebook Prophet, SARIMA models)",
+          "PyTorch",
+          "TensorFlow 2.0",
+          "HuggingFace",
+          "PyCaret"
+        ]
+      },
+      {
+        "group": "Data",
+        "items": [
+          "Data Visualization (Tableau, AWS QuickSight, Vizro, Atoti)",
+          "Processing Large Data Sets",
+          "A/B testing",
+          "Experimentation",
+          "Distributed Computing (PySpark)",
+          "Product Analytics"
+        ]
+      },
+      {
+        "group": "Cloud Computing",
+        "items": [
+          "Amazon Web Services (AWS)",
+          "EMR, EC2, S3",
+          "SageMaker, AWS Glue, BigQuery",
+          "Docker, Docker Compose, Git",
+          "Model Orchestration (Mage AI)"
+        ]
+      }
+    ]
+  }
+  

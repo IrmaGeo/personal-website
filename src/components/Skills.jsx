@@ -1,57 +1,22 @@
-import React from 'react';
+// src/components/Skills.js
+import React, { useState, useEffect } from 'react';
 
-function Skills() {
-  const skillGroups = [
-    {
-      group: 'Programming Languages',
-      items: [
-        'Python',
-        'SQL (PostgreSQL, MySQL)',
-        'Python Libraries (numpy, pandas, scikit-learn, streamlit, matplotlib, Pytorch, Seaborn, ONNX, Sqlalchemy)',
-        'Javascript',
-        'HTML',
-        'CSS',
-      ],
-    },
-    {
-      group: 'Machine Learning (ML)',
-      items: [
-        'Linear and Logistic Regression',
-        'Random Forests',
-        'PCA',
-        'Gradient Boosting',
-        'K-means',
-        'Deep Learning',
-        'NLP (nltk, SpaCy, Word2Vec, GloVe, TF-IDF)',
-        'Time Series Forecasting (Facebook Prophet, SARIMA models)',
-        'PyTorch',
-        'TensorFlow 2.0',
-        'HuggingFace',
-        'PyCaret',
-      ],
-    },
-    {
-      group: 'Data',
-      items: [
-        'Data Visualization (Tableau, AWS QuickSight, Vizro, Atoti)',
-        'Processing Large Data Sets',
-        'A/B testing',
-        'Experimentation',
-        'Distributed Computing (PySpark)',
-        'Product Analytics',
-      ],
-    },
-    {
-      group: 'Cloud Computing',
-      items: [
-        'Amazon Web Services (AWS)',
-        'EMR, EC2, S3',
-        'SageMaker, AWS Glue, BigQuery',
-        'Docker, Docker Compose, Git',
-        'Model Orchestration (Mage AI)',
-      ],
-    },
-  ];
+function Skills({ dataPath }) {
+  const [skillGroups, setSkillGroups] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(process.env.PUBLIC_URL + dataPath);
+        const data = await response.json();
+        setSkillGroups(data.skillGroups);
+      } catch (error) {
+        console.error('Error fetching skills data:', error);
+      }
+    };
+
+    fetchData();
+  }, [dataPath]);
 
   return (
     <div className='skills'>
