@@ -1,4 +1,12 @@
 # Personal Website - Irma Modzgvrishvili
+[![React](https://img.shields.io/badge/React-16.0%2B-blue.svg)](https://reactjs.org/)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+![HTML](https://img.shields.io/badge/HTML-5-blue)
+![CSS](https://img.shields.io/badge/CSS-3-orange)
+
+
+
+
 
 ## Overview
 Welcome to my personal website! This project serves as my online portfolio to showcase my work, skills, and interests. Feel free to explore and get to know more about me.
