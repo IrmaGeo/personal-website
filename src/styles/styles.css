@@ -50,7 +50,7 @@ header .nav-link {
   color: lightgreen; /* Change the color to your desired hover color */
 }
 
-body img {
+.flex-container img {
   max-width: 100%;
   height: auto; /* Ensure images are responsive */
   border-radius: 20%;
@@ -118,12 +118,18 @@ footer {
 }
 
 
-/* Media Query for Mobile and Web Devices */
-@media screen and (min-width: 375px) and (max-width: 667px) {
+
+@media screen and (max-width: 913px) {
   header {
     justify-content: center; 
     position: sticky;
     top:0;
+  }
+  .flex-container{
+    display: flex;
+    margin-right: 20px;
+    margin-left: 20px;
+    flex-direction: column;
   }
 
   footer {
@@ -133,56 +139,3 @@ footer {
   }
 }
 
-@media screen and (max-width: 912px) and (max-height: 1368px) {
-  header {
-    justify-content: center;
-    position: sticky;
-    top:0;
-  }
-
-  footer {
-    position: sticky;
-    bottom: 0;
-    width: 100%; 
-  }
-}
-
-@media screen and (max-width: 1024px) and (max-height: 600px) {
-  header {
-    justify-content: center; 
-    position: sticky;
-    top:0;
-  }
-
-  footer {
-    position: sticky;
-    bottom: 0;
-    width: 100%; 
-}
-}
-@media screen and (max-width: 1280px) and (max-height: 800px) {
-  header {
-    justify-content: center; 
-    position: sticky;
-    top:0;
-  }
-
-  footer {
-    position: sticky;
-    bottom: 0; 
-    width: 100%;
-  }
-}
-@media screen and (max-width: 834px) and (max-height: 1194px) {
-  header {
-    justify-content: center;
-    position: sticky;
-    top: 0;
-  }
-
-  footer {
-    position: sticky;
-    bottom: 0; 
-    width: 100%;
-  }
-}

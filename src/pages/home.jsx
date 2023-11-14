@@ -34,9 +34,8 @@ const Home = () => {
         <a href="https://github.com/IrmaGeo" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} />
         </a>
-      </div>
-
-      <div className='data-description'>
+     </div>
+<div>
         <h1>About Me</h1>
         {/* Introduction: Describes the role and skills */}
         <p>

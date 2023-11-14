@@ -7,7 +7,6 @@ const Projects = () => {
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  console.log(projects)
 
   useEffect(() => {
     const fetchData = async () => {
