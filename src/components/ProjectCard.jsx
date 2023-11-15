@@ -2,8 +2,8 @@
 import React from 'react';
 
 const ProjectCard = ({ project }) => {
-
   return (
+  
     <div className='project-card'>
       <div className="image-container">
         <a href={project.githubLink} target="_blank" rel="noopener noreferrer">

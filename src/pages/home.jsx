@@ -2,14 +2,13 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import myImage from '../images/profile.jpg';
 import "../styles/styles.css";
 
 const Home = () => {
   return (
     <div className='flex-container'>
       <div className='profile-info'>
-        <img src={myImage} alt="profile" />
+        <img src="/images/profile.jpg" alt="profile" />
 
         {/* Name */}
         <h1>Irma Modzgvrishvili</h1>
