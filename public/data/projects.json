@@ -38,7 +38,7 @@
       "image": "/images/multi.webp",
       "githubLink": "",
       "achievements": [
-        "Increased positive feedback by 40%, reducing complaints by 23%%",
+        "Increased positive feedback by 40%, reducing complaints by 23%",
         "Decreased company risk rate by 10% through strategic currency risk management",
         "Contributed to a 5% profit increase and 3% decrease in non-performing loans"
     ]
@@ -58,6 +58,63 @@
         "Implemented middleware solutions using Apache Kafka, improving data management and accessibility",
         "Executed flawless data migration using ETL tools like Apache NiFi, ensuring a smooth transition and minimizing disruptions"
     ]
-  }
+  },
+  {
+    "id": 5,
+    "name": "Data Migration",
+    "description": "Facilitating the integration of disparate data systems during the merger of two companies posed a challenge in executing a precise and efficient data migration from one company's system to another. The complexity lay in aligning divergent databases, structures, and ensuring data integrity throughout the process.",
+    "tools": "ETL Processes (Apache NiFi), SQL, Data Mapping and Transformation Techniques, Change Management Strategies, Jira",
+    "skills": "ETL, SQL, Jira",
+    "categoryId": 2,
+    "image": "/images/migration.png",
+    "githubLink": "",
+    "achievements": [
+      "Zero Data Loss",
+      "On-Time Delivery", 
+      "99% Data Accuracy",
+      "Smooth Operations Post-Migration",
+      "$1 Million Vendor Discount"
+  ]
+},
+{
+  "id": 6,
+  "name": "Personal Website",
+  "description": "Creating a dynamic and responsive personal website to showcase skills and projects required a modern and efficient tech stack",
+  "tools": "React, JavaScript, Docker, MySQL, JSON",
+  "skills": "Frontend Development, Containerization, Database Management, Data Interchange, Git, Heroku, DNS, SSL",
+  "categoryId": 2,
+  "image": "/images/personal.png",
+  "githubLink": "",
+  "achievements": [
+    "Dynamic User Interface",
+    "Interactive Functionality",
+    "Efficient Deployment with Docke", 
+    "Structured Database Management"
+]
+},
+{
+  "id": 7,
+  "name": "Credit Risk Assesment",
+  "description": "",
+  "tools": "",
+  "skills": "",
+  "categoryId": 1,
+  "image": "/images/creditrisk.jpeg",
+  "githubLink": "",
+  "achievements": [
+]
+},
+{
+  "id": 8,
+  "name": "Degree",
+  "description": "",
+  "tools": "",
+  "skills": "",
+  "categoryId": 1,
+  "image": "/images/degree.jpeg",
+  "githubLink": "",
+  "achievements": [
+]
+}
   ]
   
