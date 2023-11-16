@@ -15,7 +15,7 @@
     },
     {
       "id": 2,
-      "name": "Agile transformation",
+      "name": "Agile Transformation",
       "description": "A Company with 7,000 employees (TBC BANK) needed to change its corporate culture and management methodology",
       "tools": "Jira",
       "skills": "SAFe 5.1, Change management, Collaborative teamwork",
@@ -27,6 +27,37 @@
         "Enhanced team efficiency by 10%",
         "Implemented agile methodologies with McKinsey for substantial organizational improvements"
     ]
-    }
+    },
+    {
+      "id": 3,
+      "name": "Multi-Currency Loan",
+      "description": "Many customers faced dissatisfaction due to disparities between their loan currency and salary currency, leading to fluctuating monthly payments caused by exchange rate variations. This inconsistency not only created confusion for customers but also increased the risk for the bank, making it challenging to manage and predict cash flows accurately",
+      "tools": "API Integration, Product Development, Risk Assessment Algorithms, UI/UX Design",
+      "skills": "Business Analysis, Python ",
+      "categoryId": 3,
+      "image": "/images/multi.webp",
+      "githubLink": "",
+      "achievements": [
+        "Increased positive feedback by 40%, reducing complaints by 23%%",
+        "Decreased company risk rate by 10% through strategic currency risk management",
+        "Contributed to a 5% profit increase and 3% decrease in non-performing loans"
+    ]
+    },
+    {
+      "id": 4,
+      "name": "Loan Management System(LMS)Deployment",
+      "description": "The bank aimed to meet international standards for listing shares on the London Stock Market. Existing systems lacked efficiency, hindering the bank's ability to produce new products swiftly and exposing it to unnecessary risks. Data management was outdated, requiring a modern solution for seamless integration and migration",
+      "tools": "System Architecture, SQL, API Integration (REST, SOAP), Python, ETL, Apache Kafka",
+      "skills": "Analytical Thinking, Project Management, Risk Management",
+      "categoryId": 2,
+      "image": "/images/LMS.jpeg",
+      "githubLink": "",
+      "achievements": [
+        "Successfully implemented a secure and scalable Loan Management System (LMS), meeting criteria for London Stock Market listing",
+        "Orchestrated over 30 integrations, enhancing operational efficiency through REST and SOAP APIs",
+        "Implemented middleware solutions using Apache Kafka, improving data management and accessibility",
+        "Executed flawless data migration using ETL tools like Apache NiFi, ensuring a smooth transition and minimizing disruptions"
+    ]
+  }
   ]
   
